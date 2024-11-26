@@ -35,7 +35,7 @@ const languages = [
 const Skills = () => {
   return (
 		<>
-			<motion.div whileInView={'visible'} >
+			<motion.div whileInView={"visible"}>
 				<motion.h2
 					className="text-5xl font-bold"
 					initial={{
@@ -70,7 +70,7 @@ const Skills = () => {
 											duration: 1,
 											delay: 1 + index * 0.2,
 										},
-									}
+									},
 								}}
 							>
 								{skill.title}
@@ -87,7 +87,9 @@ const Skills = () => {
 											scaleX: 1,
 											transition: {
 												duration: 1,
-												delay: 1 + index * 0.2,
+												delay:
+													1 +
+													index * 0.2,
 											},
 										},
 									}}
@@ -103,12 +105,14 @@ const Skills = () => {
 							opacity: 0,
 							y: 25,
 						}}
-						whileInView={{
-							opacity: 1,
-							y: 0,
-							transition: {
-								duration: 1,
-								delay: 0.5,
+						variants={{
+							visible: {
+								opacity: 1,
+								y: 0,
+								transition: {
+									duration: 1,
+									delay: 2,
+								},
 							},
 						}}
 					>
@@ -123,19 +127,23 @@ const Skills = () => {
 										opacity: 0,
 										y: 25,
 									}}
-									whileInView={{
-										opacity: 1,
-										y: 0,
-										transition: {
-											duration: 1,
-											delay: 2 + index * 0.2,
+									variants={{
+										visible: {
+											opacity: 1,
+											y: 0,
+											transition: {
+												duration: 1,
+												delay:
+													2 +
+													index * 0.2,
+											},
 										},
 									}}
 								>
 									{skill.title}
 								</motion.h3>
 								<div className="h-2 w-full bg-gray-200 rounded-full mt-2">
-									<div
+									<motion.div
 										className="h-full bg-indigo-500 rounded-full"
 										style={{
 											width: `${skill.level}%`,
@@ -144,12 +152,16 @@ const Skills = () => {
 											scaleX: 0,
 											originX: 0,
 										}}
-										whileInView={{ scaleX: 1 }}
-										transition={{
-											duration: 1,
-											delay: 1 + index * 0.2,
+										variants={{
+											visible: {
+												scaleX: 1,
+												transition: {
+													duration: 1,
+													delay:2.25 +index *0.2,
+												},
+											},
 										}}
-									></div>
+									></motion.div>
 								</div>
 							</div>
 						))}
