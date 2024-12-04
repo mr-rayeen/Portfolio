@@ -7,36 +7,26 @@ import { atom, useAtom } from "jotai";
 import { useEffect, useRef } from "react";
 
 export const projects = [
-  {
-    title: "Wawatmos",
-    url: "https://r3f-wawatmos-final.vercel.app/",
-    image: "projects/wawatmos.jpg",
-    description: "Recreating the Atmos Awwwards website with React Three Fiber",
-  },
-  {
-    title: "Portfolio Baking",
-    url: "https://www.youtube.com/watch?v=YkHqpqJgLKw",
-    image: "projects/baking.jpg",
-    description: "Learn how to bake a 3D model with Blender and use it in r3f",
-  },
-  {
-    title: "3D Avatar",
-    url: "https://www.youtube.com/watch?v=pGMKIyALcK0",
-    image: "projects/avatar.jpg",
-    description: "Learn how to use ReadyPlayerMe to create a 3D avatar",
-  },
-  {
-    title: "Kanagame",
-    url: "https://www.youtube.com/watch?v=zwNF1-lsia8",
-    image: "projects/kanagame.jpg",
-    description: "Use React Three Fiber to create a 3D game",
-  },
-  {
-    title: "Loader",
-    url: "https://www.youtube.com/watch?v=L12wIvuZTOY",
-    image: "projects/loader.jpg",
-    description: "Create a loading screen for your r3f projects",
-  },
+	{
+		title: "E-Commerce",
+		url: "",
+		image: "projects/E-com.png",
+		description: "https://e-com-azure-beta.vercel.app/",
+	},
+	{
+		title: "Food Delivery App",
+		url: "https://food-delivery-app-hazel-three.vercel.app/",
+		image: "projects/food.png",
+		description:
+			"Designed the fully functional moder food delivery website.",
+	},
+	{
+		title: "Chatting App",
+		url: "https://github.com/mr-rayeen/Chat-App",
+		image: "projects/chat.png",
+		description:
+			"Learned implementation of socketIO and created real time chatting app.",
+	},
 ];
 
 const Project = (props) => {

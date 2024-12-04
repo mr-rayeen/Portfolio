@@ -220,3 +220,6 @@ export function Avatar(props) {
 }
 
 useGLTF.preload("models/6710bf0e1b5168bb0232c89a.glb");
+useFBX.preload("animations/Typing.fbx");
+useFBX.preload("animations/Standing Idle.fbx");
+useFBX.preload("animations/Falling Idle.fbx");
